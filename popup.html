@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=utf-8>
+    <title>登录界面</title>
+    <style>
+        .form-item {
+            padding-bottom: 15px;
+            display: flex;
+            line-height: 40px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .form-item label {
+            width: 80px;
+            flex: none;
+        }
+
+        .form-item input {
+            padding: 0 10px;
+            flex: 1;
+        }
+
+        .btn-form {
+            text-align: center;
+        }
+
+        .btn-login {
+            line-height: 40px;
+            width: 100%;
+            display: block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <h3 class="text-center">浏览器POST登录</h3>
+    <div class="form-item">
+        <label>网址：</label>
+        <input name="url" value="http://4a.xj.cmcc/platform/login!homeAtion.do" id="url" type="text"
+               placeholder="输入网址"/>
+    </div>
+    <div class="form-item">
+        <label>Host：</label>
+        <input name="host" value="4a.xj.cmcc" id="host" type="text"
+               placeholder="输入host"/>
+    </div>
+    <div class="form-item">
+        <label>Cookie：</label>
+        <input name="cookie"
+               value=""
+               id="cookie" type="text" placeholder="输入Cookie"/>
+    </div>
+    <div class="form-item">
+        <label>Referer：</label>
+        <input name="referer"
+               value="http://4a.xj.cmcc/platform/login!onlyLogin.do?mod=1&sessionId=d98fc03c-9153-450e"
+               id="referer" type="text" placeholder="输入Referer"/>
+    </div>
+    <div class="form-item btn-form">
+        <button id="btnLogin" type="button" class="btn-login">跳转登录</button>
+    </div>
+</form>
+<script src="popup.js"></script>
+</body>
+</html>

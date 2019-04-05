@@ -1,0 +1,27 @@
+{
+  "name": "Fuck Accounts",
+  "description": "MMS Fuck Accounts",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "notifications",
+    "proxy"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Fuck Accounts",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
